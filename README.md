@@ -20,7 +20,10 @@ We train DeCoNAS 1000 epoch, and fintune 1000 epoch(total 2000epoch = 2000*1000 
 
 # Result
 We construct DeCoNASNet with 4 DNBs, and each DNB has 4 layers. 
-The sequence of DeCoNASNet is '1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'.
+
+The sequence of DeCoNASNet is 
+
+'1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'.
 
 For x2 scale super-resolution task, we evaluated the performance(PSNR and SSIM) of our DeCoNASNet on four datasets(Set5, Set14, B100, Urban100).
 
