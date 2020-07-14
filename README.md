@@ -10,7 +10,7 @@ Basic implementation of DeCoNAS from [Neural Architecture Search for Image Super
 For full training details, please see `train.py`.
 
 
-The metrics and results can be generated with 'evaluation.py'
+The metrics and results can be generated with `evaluation.py`
  
 
 # Implementation details
