@@ -32,4 +32,4 @@ For x2 scale super-resolution task, we evaluated the performance(PSNR and SSIM) 
 - 
 
 # Acknowledgements
-We referred the codes of ENAS.[melodyguan/enas](https://github.com/melodyguan/enas)
+We referred the codes of ENAS([melodyguan/enas](https://github.com/melodyguan/enas)).
