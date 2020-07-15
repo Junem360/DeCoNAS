@@ -32,7 +32,9 @@ For x2 scale super-resolution task, we evaluated the performance(PSNR and SSIM) 
 
 # Requirements
 - Tensorflow-gpu >= 1.13
-- 
+- scipy >= 1.5.0
+- numpy >= 1.18
+- OpenCV >= 3.4.0
 
 # Acknowledgements
 We referred the codes of ENAS([melodyguan/enas](https://github.com/melodyguan/enas)).
