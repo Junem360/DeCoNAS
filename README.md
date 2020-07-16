@@ -7,11 +7,30 @@ Basic implementation of DeCoNAS from [Neural Architecture Search for Image Super
 - `ChildNetwork` handles the training and evaluation of the Child network
 
 # Usage
+At first, you should download the training dataset(DIV2K) and test datasets(Set5, Set14, B100, Urban100).
+
 For full training details, please see `train.py`.
-
-
 The metrics and results can be generated with `evaluation.py`
- 
+
+You can search promising networks by DeCoNAS with,
+```shell
+$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_search' --num_epochs=200 --controller_training=True
+```
+Train DeCoNASNet searched by DeCoNAS with, 
+```shell
+$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_scratch' --finetune=False --child_fixed_arc='1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'
+```
+
+After training DeCoNANet from scratch, finetune DeCoNASNet with, 
+```shell
+$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_finetune' --checkpoint='./outputs/x2/model.ckpt-931000' --finetune=True --child_fixed_arc='1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'
+```
+
+Finally, evaluate DeCoNASNet with,
+```shell
+$ python ./src/DIV2K/evaluate.py --checkpoint='model.ckpt-931000' --checkpoint_dir='./outputs/x2'
+```
+
 
 # Implementation details
 
