@@ -41,7 +41,8 @@ The sequence of DeCoNASNet is
 For x2 scale super-resolution task, we evaluated the performance(PSNR and SSIM) of our DeCoNASNet on four datasets(Set5, Set14, B100, Urban100).
 
 
-<img src="https://github.com/Junem360/DeCoNAS/edit/master/images/training_losses.PNG?raw=true" height=100% width=100%>
+<img src="<img src="https://github.com/Junem360/DeCoNAS/edit/master/images/training_losses.PNG?raw=true" height=100% width=100%>
+
 
 # Requirements
 - Tensorflow-gpu >= 1.13
