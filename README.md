@@ -35,13 +35,13 @@ $ python ./src/DIV2K/evaluate.py --checkpoint='model.ckpt-931000' --checkpoint_d
 We construct DeCoNASNet with 4 DNBs, and each DNB has 4 layers. 
 
 The sequence of DeCoNASNet is 
-
+```shell
 '1 1 1   1 1 0 1 0 0   0 1 1 0 0 0 0 1 0   0 1 0 0 1 1 1 0 0 0 0 1'.
-
+```
 For x2 scale super-resolution task, we evaluated the performance(PSNR and SSIM) of our DeCoNASNet on four datasets(Set5, Set14, B100, Urban100).
 
 
-<img src="https://github.com/titu1994/neural-architecture-search/blob/master/images/training_losses.PNG?raw=true" height=100% width=100%>
+<img src="https://github.com/Junem360/DeCoNAS/edit/master/images/training_losses.PNG?raw=true" height=100% width=100%>
 
 # Requirements
 - Tensorflow-gpu >= 1.13
