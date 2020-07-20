@@ -1,6 +1,6 @@
 # Neural Architecture Search for Image Super-Resolution Using Densely Connected Search Space: DeCoNAS
 
-Basic implementation of DeCoNAS from [Neural Architecture Search for Image Super-Resolution Using Densely Connected Search Space: DeCoNAS](https://~~).
+Basic implementation of DeCoNAS from [Neural Architecture Search for Image Super-Resolution Using Densely Connected Search Space: DeCoNAS](https://github.com/Junem360/DeCoNAS).
 
 - Uses Tensorflow to define and train the child network / Controller network.
 - `Controller` manages the training and evaluation of the Controller RNN
@@ -31,18 +31,12 @@ Finally, evaluate DeCoNASNet with,
 $ python ./src/DIV2K/evaluate.py --checkpoint='model.ckpt-931000' --checkpoint_dir='./outputs/x2'
 ```
 
-
-# Implementation details
-
-We train DeCoNAS 1000 epoch, and fintune 1000 epoch(total 2000epoch = 2000*1000 iterations)
-
-
 # Result
 We construct DeCoNASNet with 4 DNBs, and each DNB has 4 layers. 
 
 The sequence of DeCoNASNet is 
 
-'1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'.
+'1 1 1   1 1 0 1 0 0   0 1 1 0 0 0 0 1 0   0 1 0 0 1 1 1 0 0 0 0 1'.
 
 For x2 scale super-resolution task, we evaluated the performance(PSNR and SSIM) of our DeCoNASNet on four datasets(Set5, Set14, B100, Urban100).
 
