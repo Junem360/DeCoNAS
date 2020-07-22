@@ -18,12 +18,12 @@ $ python ./src/DIV2K/train.py --output_dir='./outputs/x2_search' --num_epochs=20
 ```
 Train DeCoNASNet searched by DeCoNAS with, 
 ```shell
-$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_scratch' --finetune=False --child_fixed_arc='1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'
+$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_scratch' --fine_tune=False --child_fixed_arc='1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1' --controller_training=False
 ```
 
 After training DeCoNANet from scratch, finetune DeCoNASNet with, 
 ```shell
-$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_finetune' --checkpoint='./outputs/x2/model.ckpt-931000' --finetune=True --child_fixed_arc='1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1'
+$ python ./src/DIV2K/train.py --output_dir='./outputs/x2_finetune' --checkpoint='./outputs/x2/model.ckpt-931000' --fine_tune=True --child_fixed_arc='1 1 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 1' --controller_training=False
 ```
 
 Finally, evaluate DeCoNASNet with,
